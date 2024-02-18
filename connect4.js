@@ -75,7 +75,7 @@ class Game {
     this.placeInTable(y, x);
 
     if (this.checkForWin()) {
-      return this.endGame(`Player ${this.currPlayer.name} won!`);
+      return this.endGame(`${this.currPlayer.name} won!`);
     }
     if (this.board.every((row) => row.every((cell) => cell))) {
       return this.endGame("Tie!");
